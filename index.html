@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <img src="img/menu.png" alt="">
+        </div>
+        <nav class="menu" id="menu">
+            <div class="close" id="close">
+                <img src="img/close.png" alt="close">
+            </div>
+            <ul class="menu__ul">
+                <li class="menu__item">
+                    <a href="#" class="active">Личная информация</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Опыт</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">JavaScript</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">О себе</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<section class="fon">
+    <div class="block-h1">
+        <h1>Анкета</h1>
+    </div>
+</section>
+<div class="wrapper">
+    <section class="form">
+
+        <div class="block-icon">
+            <img src="img/info-icon.png" alt="info-icon">
+        </div>
+        <h2>Личная информация</h2>
+        <div class="form__item">
+            <input type="text" placeholder="Лукинова Екатерина Александровна">
+        </div>
+        <div class="form__item year">
+            <img src="img/arrow.png" alt="arrow" class="select-arrow">
+            <select name="select">
+                <option value="valueNone">1987</option>
+                <option value="value1">2007</option>
+                <option value="value2">2006</option>
+                <option value="value3">2005</option>
+            </select>
+        </div>
+        <div class="form__item">
+            <input type="text" placeholder="г.Ставрополь">
+        </div>
+        <div class="form__item">
+            <input type="text" placeholder="live:802eaa40545fb18c">
+        </div>
+        <div class="form__item">
+            <input type="text" placeholder="katyushta@rambler.ru">
+        </div>
+
+    </section>
+</div>
+<div class="wrapper">
+    <section class="form">
+
+        <div class="block-icon">
+            <img src="img/info-icon2.png" alt="info-icon">
+        </div>
+        <h2>Расскажите о своем опыте</h2>
+        <div class="checkboxList">
+            <div class="checkboxList__column">
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label1">
+                    <label for="label1">
+                        БЭМ/OOCSS
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label5" checked>
+                    <label for="label5">
+                        Stylus/LESS/SASS
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label6" checked>
+                    <label for="label6">
+                        Работаю с SVG
+                    </label>
+                </div>
+            </div>
+            <div class="checkboxList__column">
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label7" checked>
+                    <label for="label7">
+                        Верстаю семантично
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label8">
+                    <label for="label8">
+                        ES2015/ES2016
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label9">
+                    <label for="label9">
+                        Gulp/GRUNT
+                    </label>
+                </div>
+            </div>
+            <div class="checkboxList__column">
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label10" checked>
+                    <label for="label10">
+                        Webpack
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label11" checked>
+                    <label for="label11">
+                        jQuery
+                    </label>
+                </div>
+                <div class="checkboxList__item">
+                    <input type="checkbox" id="label12" checked>
+                    <label for="label12">
+                        Ипользую Git
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrapper">
+    <section class="form">
+        <div class="block-icon">
+            <img src="img/info-icon3.png" alt="info-icon">
+        </div>
+        <h2>Уровень владения JavaScript</h2>
+        <div class="container">
+            <input type="radio" class="radio-hide" name="progress" value="zero" id="zero" checked>
+            <label class="label-text" for="zero" id="label-zero">
+                <span class="number">1</span>
+               <span class="text">Не владею</span>
+               <img src="img/label1.png" alt="">
+            </label>
+
+            <input type="radio" class="radio-hide" name="progress" value="twentyfive" id="twentyfive">
+            <label class="label-text" for="twentyfive" id="label-twentifive">
+                <span class="number">2</span>
+                <span class="text">Использую готовые<br>решения</span>
+                <img src="img/label2.png" alt="">
+            </label>
+
+            <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
+            <label class="label-text" for="fifty" id="label-fifty">
+                <span class="number">3</span>
+                <span class="text">Использую готовые решения<br> и умею и переделывать</span>
+                <img src="img/label2.png" alt="">
+            </label>
+
+            <input type="radio" class="radio-hide" name="progress" value="onehundred" id="onehundred">
+            <label class="label-text" for="onehundred" id="label-onehundred">
+                <span class="number">4</span>
+                <span class="text">Пишу сложный JS с нуля</span>
+                <img src="img/label3.png" alt="">
+            </label>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <ol class="answer-list">
+            <li>Не владею</li>
+            <li>Использую готовые решения</li>
+            <li>Использую готовые решения и умею и переделывать</li>
+            <li>Пишу сложный JS с нуля</li>
+        </ol>
+    </section>
+</div>
+
+
+</body>
