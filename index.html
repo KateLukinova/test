@@ -20,16 +20,16 @@
             </div>
             <ul class="menu__ul">
                 <li class="menu__item">
-                    <a href="#" class="active">Личная информация</a>
+                    <a href="#info" class="active">Личная информация</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">Опыт</a>
+                    <a href="#experience">Опыт</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">JavaScript</a>
+                    <a href="#js">JavaScript</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">О себе</a>
+                    <a href="about">О себе</a>
                 </li>
             </ul>
         </nav>
@@ -41,8 +41,7 @@
     </div>
 </section>
 <div class="wrapper">
-    <section class="form">
-
+    <section class="form" id="info">
         <div class="block-icon">
             <img src="img/info-icon.png" alt="info-icon">
         </div>
@@ -72,8 +71,7 @@
     </section>
 </div>
 <div class="wrapper">
-    <section class="form">
-
+    <section class="form" id="experience">
         <div class="block-icon">
             <img src="img/info-icon2.png" alt="info-icon">
         </div>
@@ -143,7 +141,7 @@
     </section>
 </div>
 <div class="wrapper">
-    <section class="form">
+    <section class="form" id="js">
         <div class="block-icon">
             <img src="img/info-icon3.png" alt="info-icon">
         </div>
@@ -163,7 +161,7 @@
                 <img src="img/label2.png" alt="">
             </label>
 
-            <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
+            <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty" checked>
             <label class="label-text" for="fifty" id="label-fifty">
                 <span class="number">3</span>
                 <span class="text">Использую готовые решения<br> и умею и переделывать</span>
@@ -188,6 +186,18 @@
         </ol>
     </section>
 </div>
-
-
+<div class="wrapper">
+    <section class="form" id="about">
+        <div class="block-icon">
+            <img src="img/info-icon4.png" alt="info-icon">
+        </div>
+        <h2>Расскажите о себе</h2>
+       <h3>
+           Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+       </h3>
+            <textarea name="textarea" cols="30" rows="10">Не помню точно описание вакансии, но скорее всего совпали требования с моими навыками. Плюс меня устроил размер вознаграждения
+            </textarea>
+        <button type="submit">Готово</button>
+    </section>
+</div>
 </body>
